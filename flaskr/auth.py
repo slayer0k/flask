@@ -17,13 +17,10 @@ def register():
         password = request.form.get('password')
         db = get_db()
         error = None
-
         if not username:
             error = 'Имя пользователя необходимо!'
-        
         if not password:
             error = 'Необходимо ввести пароль'
-
         if not error:
             try:
                 db.execute(
@@ -35,7 +32,7 @@ def register():
                 error = f'Пользователь -{username}- уже существует.'
             else:
                 return redirect(url_for('auth.login'))
-    flash(error)
+        flash(error)
     return render_template('auth/register.html')
 
 
