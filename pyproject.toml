@@ -1,0 +1,12 @@
+[project]
+name = 'flask'
+version = '1.0.0'
+dependencies = [
+  "flask",
+  "watchdog",
+  "python-dotenv",
+]
+
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
