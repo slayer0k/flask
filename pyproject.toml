@@ -1,10 +1,8 @@
 [project]
-name = 'flask'
-version = '1.0.0'
+name = "flaskr"
+version = "1.0.0"
 dependencies = [
-  "flask",
-  "watchdog",
-  "python-dotenv",
+    "flask",
 ]
 
 [build-system]
